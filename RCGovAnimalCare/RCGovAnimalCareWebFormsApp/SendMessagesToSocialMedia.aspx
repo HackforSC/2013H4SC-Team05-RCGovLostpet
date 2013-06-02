@@ -55,56 +55,65 @@
                         </ul>--%>
                     </div>
                     <div>
-                        <asp:Label ID="lblType" runat="server" Text="Type">  </asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            <asp:TextBox ID="txtType" runat="server" align="right"></asp:TextBox>
-                        <%--        <select>
-            <option value="1">Dog</option>
-            <option value="2">Cat</option>
-            <option value="3">Rabbit</option>
-            <option value="4">Snake</option>
-        </select>--%>
+                        <asp:DropDownList ID="ddlType" runat="server">
+                            <asp:ListItem Value="1">Dog</asp:ListItem>
+                            <asp:ListItem Value="2">Cat</asp:ListItem>
+                            <asp:ListItem Value="3">Rabbit</asp:ListItem>
+                            <asp:ListItem Value="4">Snake</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Label ID="lblBreed" runat="server" Text="Breed">  </asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtBreed" runat="server" align="right"></asp:TextBox>
+                        <asp:DropDownList ID="ddlBreed" runat="server">
+                            <asp:ListItem Value="1">Poodle</asp:ListItem>
+                            <asp:ListItem Value="2">Boxer</asp:ListItem>
+                            <asp:ListItem Value="3">Short Hair Domestic</asp:ListItem>
+                            <asp:ListItem Value="3">Long Hair Domestic</asp:ListItem>
+                            <asp:ListItem Value="3">Retriever</asp:ListItem>
+                            <asp:ListItem Value="4">Calico</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Label ID="lblSize" runat="server" Text="Size">  </asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtSize" runat="server"></asp:TextBox>
+                        <asp:DropDownList ID="ddlSize" runat="server">
+                            <asp:ListItem Value="1">Small</asp:ListItem>
+                            <asp:ListItem Value="2">Medium</asp:ListItem>
+                            <asp:ListItem Value="3">Large</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Label ID="lblColor" runat="server" Text="Color">  </asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtColor" runat="server"></asp:TextBox>
+                        <asp:DropDownList ID="ddlColor" runat="server">
+                            <asp:ListItem Value="1">Black and White</asp:ListItem>
+                            <asp:ListItem Value="2">Black</asp:ListItem>
+                            <asp:ListItem Value="3">Grey</asp:ListItem>
+                            <asp:ListItem Value="3">White</asp:ListItem>
+                            <asp:ListItem Value="3">Brown</asp:ListItem>
+                            <asp:ListItem Value="4">Orange</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Label ID="lblPickupLocation" runat="server" Text="Pick Up Location">  </asp:Label>
+                        <asp:Label ID="lblPickupLocation" runat="server" Text="Pick Up Location"></asp:Label>
                         &nbsp;&nbsp;
-        <asp:TextBox ID="txtPickupLocation" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPickupLocation" runat="server"></asp:TextBox>
                         <br />
                         <br />
-                        <asp:Label ID="lblSex" runat="server" Text="Sex">  </asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtSex" runat="server"></asp:TextBox>
+                        <asp:DropDownList ID="ddlSex" runat="server">
+                            <asp:ListItem Value="1">Male</asp:ListItem>
+                            <asp:ListItem Value="2">Female</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Label ID="lblLicensed" runat="server" Text="Licensed">  </asp:Label>
-                        &nbsp;&nbsp;
-                    <asp:TextBox ID="txtLicensed" runat="server"></asp:TextBox>
+                        <asp:DropDownList ID="ddlYesNo" runat="server">
+                            <asp:ListItem Value="1">No</asp:ListItem>
+                            <asp:ListItem Value="2">Yes</asp:ListItem>
+                        </asp:DropDownList>
+                        <br />
+                        <br />
                         <br />
                         <br />
                         <asp:Label ID="lblDatePickedUp" runat="server" Text="DatePickedUp">  </asp:Label>
                         &nbsp;&nbsp;
-                    <asp:TextBox ID="txtPickedUp" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPickedUp" runat="server"></asp:TextBox>
                         <br />
                         <br />
-                        <%--        <select>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-        </select>--%>
                         <br />
                         <br />
                         <asp:Button ID="Button1" runat="server" Text="Send Messages to Social Media" OnClick="Button1_Click" />

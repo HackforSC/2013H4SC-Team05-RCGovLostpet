@@ -72,13 +72,13 @@ namespace RCGovAnimalCareWebFormsApp
                 var client = new FacebookClient(access_token);
 
                 client.Post("/rcgovlostpet/feed", new { message = bodymessage });
-                txtType.Text = String.Empty;
-                txtBreed.Text = String.Empty;
-                txtSize.Text = String.Empty;
-                txtColor.Text = String.Empty;
+                ddlBreed.ClearSelection();
+                ddlColor.ClearSelection();
+                ddlSex.ClearSelection();
+                ddlSize.ClearSelection();
+                ddlType.ClearSelection();
+                ddlYesNo.ClearSelection();
                 txtPickupLocation.Text = String.Empty;
-                txtSex.Text = String.Empty;
-                txtLicensed.Text = String.Empty;
                 txtPickedUp.Text = String.Empty;
                 Label9.Text = "Successfully sent the message to facebook";
             }
@@ -136,8 +136,17 @@ namespace RCGovAnimalCareWebFormsApp
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string bodymessage = "Type: " + txtType.Text + "\r\n" + "Breed: " + txtBreed.Text + "\r\n" + "Size: " + txtSize.Text + "\r\n" + "Color: " + txtColor.Text + "\r\n" + "Pickup Location: " + txtPickupLocation.Text + "\r\n" +
-                                  "Sex: " + txtSex.Text + "\r\n" + "Licensed: " + txtLicensed.Text + "\r\n" + "Date Picked Up: " + txtPickedUp.Text + "\r\n" + "Picture: " + "http://animalcare.richlandonline.com/animalviewer/image.aspx?strpath=%2F%2F2020-1870-srv10%2FAnimalImages%2F5-27-13bonbon1.jpg";
+            string bodymessage = "#rcgovlostpet" + "\r\n" + 
+                "Type: " + ddlType.SelectedItem.Text + "\r\n"
+                + "Breed: " + ddlBreed.SelectedItem.Text + "\r\n"
+                + "Size: " + ddlSize.SelectedItem.Text + "\r\n"
+                + "Color: " + ddlColor.SelectedItem.Text + "\r\n"
+                + "Pickup Location: " + txtPickupLocation.Text + "\r\n"
+                + "Sex: " + ddlSex.SelectedItem.Text + "\r\n"
+                + "Licensed: " + ddlYesNo.SelectedItem.Text + "\r\n"
+                + "Date Picked Up: " + txtPickedUp.Text + "\r\n" 
+                + "Picture: " + "http://animalcare.richlandonline.com/animalviewer/image.aspx?strpath=%2F%2F2020-1870-srv10%2FAnimalImages%2F5-27-13bonbon1.jpg";
+           
             PostToFacebook(bodymessage);
             //PostToTwitter(bodymessage);
             //Server.Transfer("WebForm1.aspx");
