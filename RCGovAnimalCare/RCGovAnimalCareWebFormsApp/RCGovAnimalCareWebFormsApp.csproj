@@ -294,6 +294,7 @@
     <Content Include="Images\testdog.jpg" />
     <Content Include="Images\Untitled-1.gif" />
     <Content Include="Images\xdog-breeds.jpg.pagespeed.ic.ioQVQOhtA4.jpg" />
+    <Content Include="img\asset.f.logo.lg.png" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="Info.html" />
@@ -309,7 +310,6 @@
     <Content Include="SendMessagesToSocialMedia.aspx" />
     <Content Include="petlicense.pdf" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
-    <Content Include="PosttoFacebook.aspx" />
     <Content Include="RCAC.aspx" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />
@@ -409,13 +409,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="PosttoFacebook.aspx.cs">
-      <DependentUpon>PosttoFacebook.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PosttoFacebook.aspx.designer.cs">
-      <DependentUpon>PosttoFacebook.aspx</DependentUpon>
     </Compile>
     <Compile Include="PostToTwitter.aspx.cs">
       <DependentUpon>PostToTwitter.aspx</DependentUpon>
