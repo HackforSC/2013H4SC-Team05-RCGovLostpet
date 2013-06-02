@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Richland County Found Pet Lost Pet Mobile App";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    Current Animal Care App <a href="http://animalcare.richlandonline.com/" title="Richland County Animal Care App">http://animalcare.richlandonline.com/</a>.
+</p>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Navigation</li>
+    <li>@Html.ActionLink("About", "About", "Home")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+</ul>

@@ -1,0 +1,2 @@
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalCareViewer\obj\Debug\AnimalCareViewer.Resources.resources
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalCareViewer\obj\Debug\AnimalCareViewer.vbproj.GenerateResource.Cache

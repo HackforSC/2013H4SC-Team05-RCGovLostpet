@@ -1,0 +1,5 @@
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\FbAuth\bin\FbAuth.dll
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\FbAuth\bin\FbAuth.pdb
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\FbAuth\obj\Debug\FbAuth.dll
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\FbAuth\obj\Debug\FbAuth.pdb
+C:\RC\RCGovAnimalCare\RCGovAnimalCare\FbAuth\obj\Debug\FbAuth.rewritten

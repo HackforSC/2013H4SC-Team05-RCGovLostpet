@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://richlandcounty.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://richlandcounty.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://richlandcounty.com/">
+      <s:element name="RetrieveImageByPath">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strImagePath" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intImgWdth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intImgHt" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intOriginal" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveImageByPathResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveImageByPathResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalsInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAnimalsInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAnimalsInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalsInfoCity">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAnimalsInfoCityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAnimalsInfoCityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalInfoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intAnimalID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalInfoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAnimalInfoByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalInfoByIDCity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intAnimalID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnimalInfoByIDCityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAnimalInfoByIDCityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RetrieveImageByPathSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveImageByPath" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveImageByPathSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveImageByPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalsInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAnimalsInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalsInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAnimalsInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalsInfoCitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAnimalsInfoCity" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalsInfoCitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAnimalsInfoCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalInfoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalInfoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalInfoByIDCitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfoByIDCity" />
+  </wsdl:message>
+  <wsdl:message name="GetAnimalInfoByIDCitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfoByIDCityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AnimalImgsSoap">
+    <wsdl:operation name="RetrieveImageByPath">
+      <wsdl:input message="tns:RetrieveImageByPathSoapIn" />
+      <wsdl:output message="tns:RetrieveImageByPathSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfo">
+      <wsdl:input message="tns:GetAnimalsInfoSoapIn" />
+      <wsdl:output message="tns:GetAnimalsInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfoCity">
+      <wsdl:input message="tns:GetAnimalsInfoCitySoapIn" />
+      <wsdl:output message="tns:GetAnimalsInfoCitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByID">
+      <wsdl:input message="tns:GetAnimalInfoByIDSoapIn" />
+      <wsdl:output message="tns:GetAnimalInfoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByIDCity">
+      <wsdl:input message="tns:GetAnimalInfoByIDCitySoapIn" />
+      <wsdl:output message="tns:GetAnimalInfoByIDCitySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AnimalImgsSoap" type="tns:AnimalImgsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveImageByPath">
+      <soap:operation soapAction="http://richlandcounty.com/RetrieveImageByPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfo">
+      <soap:operation soapAction="http://richlandcounty.com/GetAnimalsInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfoCity">
+      <soap:operation soapAction="http://richlandcounty.com/GetAnimalsInfoCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByID">
+      <soap:operation soapAction="http://richlandcounty.com/GetAnimalInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByIDCity">
+      <soap:operation soapAction="http://richlandcounty.com/GetAnimalInfoByIDCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AnimalImgsSoap12" type="tns:AnimalImgsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveImageByPath">
+      <soap12:operation soapAction="http://richlandcounty.com/RetrieveImageByPath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfo">
+      <soap12:operation soapAction="http://richlandcounty.com/GetAnimalsInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalsInfoCity">
+      <soap12:operation soapAction="http://richlandcounty.com/GetAnimalsInfoCity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByID">
+      <soap12:operation soapAction="http://richlandcounty.com/GetAnimalInfoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnimalInfoByIDCity">
+      <soap12:operation soapAction="http://richlandcounty.com/GetAnimalInfoByIDCity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AnimalImgs">
+    <wsdl:port name="AnimalImgsSoap" binding="tns:AnimalImgsSoap">
+      <soap:address location="http://localhost:62896/AnimalImgs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AnimalImgsSoap12" binding="tns:AnimalImgsSoap12">
+      <soap12:address location="http://localhost:62896/AnimalImgs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

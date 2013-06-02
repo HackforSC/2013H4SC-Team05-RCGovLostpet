@@ -1,0 +1,45 @@
+BODY
+{
+}
+.hyper1
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana
+}
+.BodyText1
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana
+}
+.NewConstruct
+{
+    FONT-SIZE: 10pt;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana
+}
+.Backset
+{
+    BACKGROUND-COLOR: #b9ba7f
+}
+.UnderText1
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: underline
+}
+.menu1
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}

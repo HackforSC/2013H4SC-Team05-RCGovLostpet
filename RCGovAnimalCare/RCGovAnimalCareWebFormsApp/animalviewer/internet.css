@@ -1,0 +1,56 @@
+BODY
+{
+	
+}
+
+.hyper1
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana
+}
+.BodyText1
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana;
+    text-align:center;
+    font-weight:bold;
+    
+}
+.NewConstruct
+{
+    FONT-SIZE: 10pt;
+    COLOR: darkred;
+    FONT-FAMILY: Verdana;
+}
+.Backset
+{
+    BACKGROUND-COLOR: #b9ba7f
+}
+.UnderText1
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana;
+    
+}
+.menu1
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000080;
+    FONT-FAMILY: Verdana
+}
+.imagepg
+{
+	 width: 600px;
+    height: auto;
+   
+    
+}
+.errmsg
+{
+	font-size: xx-large;
+	text-align: center;
+}
