@@ -72,8 +72,15 @@ namespace RCGovAnimalCareWebFormsApp
                 var client = new FacebookClient(access_token);
 
                 client.Post("/rcgovlostpet/feed", new { message = bodymessage });
-                TextBox1.Text = String.Empty;
-                Label1.Text = "Successfully sent the message to facebook";
+                txtType.Text = String.Empty;
+                txtBreed.Text = String.Empty;
+                txtSize.Text = String.Empty;
+                txtColor.Text = String.Empty;
+                txtPickupLocation.Text = String.Empty;
+                txtSex.Text = String.Empty;
+                txtLicensed.Text = String.Empty;
+                txtPickedUp.Text = String.Empty;
+                Label9.Text = "Successfully sent the message to facebook";
             }
         }
 
@@ -129,7 +136,8 @@ namespace RCGovAnimalCareWebFormsApp
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string bodymessage = TextBox1.Text;
+            string bodymessage = "Type: " + txtType.Text + "\r\n" + "Breed: " + txtBreed.Text + "\r\n" + "Size: " + txtSize.Text + "\r\n" + "Color: " + txtColor.Text + "\r\n" + "Pickup Location: " + txtPickupLocation.Text + "\r\n" +
+                                  "Sex: " + txtSex.Text + "\r\n" + "Licensed: " + txtLicensed.Text + "\r\n" + "Date Picked Up: " + txtPickedUp.Text + "\r\n" + "Picture: " + "http://animalcare.richlandonline.com/animalviewer/image.aspx?strpath=%2F%2F2020-1870-srv10%2FAnimalImages%2F5-27-13bonbon1.jpg";
             PostToFacebook(bodymessage);
             //PostToTwitter(bodymessage);
             //Server.Transfer("WebForm1.aspx");
