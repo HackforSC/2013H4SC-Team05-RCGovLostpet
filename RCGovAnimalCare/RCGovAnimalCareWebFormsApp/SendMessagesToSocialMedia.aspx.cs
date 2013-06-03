@@ -19,7 +19,6 @@ namespace RCGovAnimalCareWebFormsApp
             if (!IsPostBack)
             {
                 string app_id = "145921825587690";
-                //string app_secret = "12f3652f02febf35f9be331ba558cb0a";
                 string scope = "publish_stream,manage_pages";
 
                 if (Request["code"] == null)
@@ -80,7 +79,7 @@ namespace RCGovAnimalCareWebFormsApp
                 ddlYesNo.ClearSelection();
                 txtPickupLocation.Text = String.Empty;
                 txtPickedUp.Text = String.Empty;
-                Label9.Text = "Successfully sent the message to facebook";
+                Label9.Text = "Successfully sent the message to social media";
             }
         }
 
