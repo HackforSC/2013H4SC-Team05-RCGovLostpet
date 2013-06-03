@@ -106,12 +106,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RCGovAnimalCareApp\RCGovAnimalCareMobileApp.csproj">
-      <Project>{F9E1627D-F03F-45A6-8BC8-47DA9B2234E5}</Project>
-      <Name>RCGovAnimalCareMobileApp</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
