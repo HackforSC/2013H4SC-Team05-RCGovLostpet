@@ -23,9 +23,7 @@ namespace RCGovAnimalCareWebFormsApp
 
                 if (Request["code"] == null)
                 {
-                    Response.Redirect(string.Format(
-                        "https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&scope={2}",
-                        app_id, Request.Url.AbsoluteUri, scope));
+                    Response.Redirect(string.Format("https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&scope={2}",app_id, Request.Url.AbsoluteUri, scope));
                 }
 
             }

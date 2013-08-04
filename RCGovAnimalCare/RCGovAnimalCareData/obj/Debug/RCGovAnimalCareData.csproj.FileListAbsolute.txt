@@ -1,9 +1,0 @@
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\RCGovAnimalCareData.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\RCGovAnimalCareData.pdb
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\EntityFramework.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\EntityFramework.SqlServer.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\EntityFramework.xml
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\bin\EntityFramework.SqlServer.xml
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\obj\Debug\RCGovAnimalCareData.csprojResolveAssemblyReference.cache
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\obj\Debug\RCGovAnimalCareData.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\RCGovAnimalCareData\obj\Debug\RCGovAnimalCareData.pdb

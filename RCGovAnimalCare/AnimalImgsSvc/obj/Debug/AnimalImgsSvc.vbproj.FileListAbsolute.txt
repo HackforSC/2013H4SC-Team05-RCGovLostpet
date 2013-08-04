@@ -1,9 +1,0 @@
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\bin\AnimalImgsSvc.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\bin\AnimalImgsSvc.pdb
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\bin\AnimalImgsSvc.xml
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.Resources.resources
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.vbproj.GenerateResource.Cache
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.dll
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.xml
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.pdb
-C:\RC\RCGovAnimalCare\RCGovAnimalCare\AnimalImgsSvc\obj\Debug\AnimalImgsSvc.vbprojResolveAssemblyReference.cache

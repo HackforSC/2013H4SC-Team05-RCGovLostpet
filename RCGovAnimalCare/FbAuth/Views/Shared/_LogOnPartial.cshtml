@@ -1,7 +1,0 @@
-﻿@if(Request.IsAuthenticated) {
-    <text>Welcome <strong>@User.Identity.Name</strong>!
-    [ @Html.ActionLink("Log Off", "LogOff", "Auth") ]</text>
-}
-else {
-    <a href="/Auth/FacebookLogin" ><img src="@Url.Content("~/Content/Images/loginfb.png")" style="border:0" alt="Sign in with FB" /></a>
-}
